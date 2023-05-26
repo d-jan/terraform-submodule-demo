@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "us-docker.pkg.dev/cloudrun/container/${var.service_name}"
+        image = "asia-northeast1-docker.pkg.dev/${var.project}/${var.service_name}"
       }
     }
   }
